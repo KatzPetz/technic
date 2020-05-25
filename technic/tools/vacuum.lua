@@ -1,7 +1,7 @@
 -- Configuration
-local vacuum_max_charge        = 10000 -- 10000 - Maximum charge of the vacuum cleaner
-local vacuum_charge_per_object = 100   -- 100   - Capable of picking up 50 objects
-local vacuum_range             = 8     -- 8     - Area in which to pick up objects
+local vacuum_max_charge        = 50000 -- 50000 - Maximum charge of the vacuum cleaner
+local vacuum_charge_per_object = 10 	-- 10 	- Capable of picking up 5000 objects
+local vacuum_range             = 10 	-- 10 	- Area in which to pick up objects
 
 local S = technic.getter
 
@@ -54,8 +54,8 @@ minetest.register_tool("technic:vacuum", {
 minetest.register_craft({
 	output = 'technic:vacuum',
 	recipe = {
-		{'pipeworks:tube_1',              'pipeworks:filter', 'technic:battery'},
-		{'pipeworks:tube_1',              'basic_materials:motor',    'technic:battery'},
-		{'technic:stainless_steel_ingot', '',                 ''},
+		{'pipeworks:tube_1', 'pipeworks:filter', 'technic:battery'},
+		{'pipeworks:tube_1', 'basic_materials:motor', 'technic:battery'},
+		{'technic:stainless_steel_ingot', '', ''},
 	}
 })
