@@ -1,8 +1,8 @@
 -- Configuration
 
-local chainsaw_max_charge      = 30000 -- Maximum charge of the saw
--- Gives 2500 nodes on a single charge (about 50 complete normal trees)
-local chainsaw_charge_per_node = 12
+local chainsaw_max_charge      = 300000 -- Maximum charge of the saw
+-- Gives 3000 nodes on a single charge (about 500 complete normal trees)
+local chainsaw_charge_per_node = 10
 -- Cut down tree leaves.  Leaf decay may cause slowness on large trees
 -- if this is disabled.
 local chainsaw_leaves = true
@@ -18,26 +18,26 @@ local nodes = {
 	{"default:tree", true},
 	{"default:apple", true},
 	{"default:pine_tree", true},
-	{"default:acacia_leaves", false},
-	{"default:aspen_leaves", false},
-	{"default:leaves", false},
-	{"default:jungleleaves", false},
-	{"default:pine_needles", false},
+	{"default:acacia_leaves", true},
+	{"default:aspen_leaves", true},
+	{"default:leaves", true},
+	{"default:jungleleaves", true},
+	{"default:pine_needles", true},
 
 	-- The default bushes
 	{"default:acacia_bush_stem", true},
 	{"default:bush_stem", true},
 	{"default:pine_bush_stem", true},
-	{"default:acacia_bush_leaves", false},
-	{"default:blueberry_bush_leaves", false},
+	{"default:acacia_bush_leaves", true},
+	{"default:blueberry_bush_leaves", true},
 	{"default:blueberry_bush_leaves_with_berries", false},
-	{"default:bush_leaves", false},
-	{"default:pine_bush_needles", false},
+	{"default:bush_leaves", true},
+	{"default:pine_bush_needles", true},
 
 	-- Rubber trees from moretrees or technic_worldgen if moretrees isn't installed
 	{"moretrees:rubber_tree_trunk_empty", true},
 	{"moretrees:rubber_tree_trunk", true},
-	{"moretrees:rubber_tree_leaves", false},
+	{"moretrees:rubber_tree_leaves", true},
 
 	-- Support moretrees (trunk)
 	{"moretrees:acacia_trunk", true},
@@ -61,27 +61,27 @@ local nodes = {
 	{"moretrees:spruce_trunk", true},
 	{"moretrees:willow_trunk", true},
 	-- Support moretrees (leaves)
-	{"moretrees:acacia_leaves", false},
-	{"moretrees:apple_tree_leaves", false},
-	{"moretrees:beech_leaves", false},
-	{"moretrees:birch_leaves", false},
-	{"moretrees:cedar_leaves", false},
-	{"moretrees:date_palm_leaves", false},
-	{"moretrees:fir_leaves", false},
-	{"moretrees:fir_leaves_bright", false},
-	{"moretrees:jungletree_leaves_green", false},
-	{"moretrees:jungletree_leaves_yellow", false},
-	{"moretrees:jungletree_leaves_red", false},
-	{"moretrees:oak_leaves", false},
-	{"moretrees:palm_leaves", false},
-	{"moretrees:poplar_leaves", false},
-	{"moretrees:pine_leaves", false},
-	{"moretrees:sequoia_leaves", false},
-	{"moretrees:spruce_leaves", false},
-	{"moretrees:willow_leaves", false},
+	{"moretrees:acacia_leaves", true},
+	{"moretrees:apple_tree_leaves", true},
+	{"moretrees:beech_leaves", true},
+	{"moretrees:birch_leaves", true},
+	{"moretrees:cedar_leaves", true},
+	{"moretrees:date_palm_leaves", true},
+	{"moretrees:fir_leaves", true},
+	{"moretrees:fir_leaves_bright", true},
+	{"moretrees:jungletree_leaves_green", true},
+	{"moretrees:jungletree_leaves_yellow", true},
+	{"moretrees:jungletree_leaves_red", true},
+	{"moretrees:oak_leaves", true},
+	{"moretrees:palm_leaves", true},
+	{"moretrees:poplar_leaves", true},
+	{"moretrees:pine_leaves", true},
+	{"moretrees:sequoia_leaves", true},
+	{"moretrees:spruce_leaves", true},
+	{"moretrees:willow_leaves", true},
 	-- Support moretrees (fruit)
 	{"moretrees:acorn", false},
-	{"moretrees:apple_blossoms", false},
+	{"moretrees:apple_blossoms", true},
 	{"moretrees:cedar_cone", false},
 	{"moretrees:coconut", false},
 	{"moretrees:coconut_0", false},
@@ -114,34 +114,34 @@ local nodes = {
 	{"growing_trees:branch_xpzp", true},
 	{"growing_trees:branch_zz", true},
 	{"growing_trees:branch_xx", true},
-	{"growing_trees:leaves", false},
+	{"growing_trees:leaves", true},
 
 	-- Support cool_trees
 	{"bamboo:trunk", true},
-	{"bamboo:leaves", false},
+	{"bamboo:leaves", true},
 	{"birch:trunk", true},
-	{"birch:leaves", false},
+	{"birch:leaves", true},
 	{"cherrytree:trunk", true},
-	{"cherrytree:blossom_leaves", false},
-	{"cherrytree:leaves", false},
+	{"cherrytree:blossom_leaves", true},
+	{"cherrytree:leaves", true},
 	{"chestnuttree:trunk", true},
-	{"chestnuttree:leaves", false},
+	{"chestnuttree:leaves", true},
 	{"clementinetree:trunk", true},
-	{"clementinetree:leaves", false},
+	{"clementinetree:leaves", true},
 	{"ebony:trunk", true},
-	{"ebony:creeper", false},
-	{"ebony:creeper_leaves", false},
-	{"ebony:leaves", false},
+	{"ebony:creeper", true},
+	{"ebony:creeper_leaves", true},
+	{"ebony:leaves", true},
 	{"jacaranda:trunk", true},
-	{"jacaranda:blossom_leaves", false},
+	{"jacaranda:blossom_leaves", true},
 	{"larch:trunk", true},
-	{"larch:leaves", false},
+	{"larch:leaves", true},
 	{"lemontree:trunk", true},
 	{"lemontree:leaves", false},
 	{"mahogany:trunk", true},
-	{"mahogany:leaves", false},
+	{"mahogany:leaves", true},
 	{"palm:trunk", true},
-	{"palm:leaves", false},
+	{"palm:leaves", true},
 
 	-- Support growing_cactus
 	{"growing_cactus:sprout", true},
@@ -162,13 +162,13 @@ local nodes = {
 	{"growing_cactus:branch_xx", true},
 
 	-- Support farming_plus
-	{"farming_plus:banana_leaves", false},
+	{"farming_plus:banana_leaves", true},
 	{"farming_plus:banana", false},
-	{"farming_plus:cocoa_leaves", false},
+	{"farming_plus:cocoa_leaves", true},
 	{"farming_plus:cocoa", false},
 
 	-- Support nature
-	{"nature:blossom", false},
+	{"nature:blossom", true},
 
 	-- Support snow
 	{"snow:needles", false},
@@ -181,6 +181,30 @@ local nodes = {
 	{"trunks:moss", false},
 	{"trunks:moss_fungus", false},
 	{"trunks:treeroot", false},
+	
+	-- Support ethereal
+	{"ethereal:bamboo", true},
+	{"ethereal:bamboo_leaves", true},
+	{"ethereal:bananaleaves", true},
+	{"ethereal:banana_trunk", true},
+	{"ethereal:big_tree", true},
+	{"ethereal:frost_leaves", true},
+	{"ethereal:frost_tree", true},
+	{"ethereal:mushroom", true},
+	{"ethereal:mushroom_pore", true},
+	{"ethereal:mushroom_trunk", true},
+	{"ethereal:orange_leaves", true},
+	{"ethereal:orange_tree", true},
+	{"ethereal:palmleaves", true},
+	{"ethereal:palm_trunk", true},
+	{"ethereal:redwood_leaves", true},
+	{"ethereal:redwood_trunk", true},
+	{"ethereal:scorched_tree", true},
+	{"ethereal:willow_trunk", true},
+	{"ethereal:willow_twig", true},
+	{"ethereal:yellowleaves", true},
+	{"ethereal:yellow_trunk", true},
+	
 }
 
 local timber_nodenames = {}
@@ -406,11 +430,10 @@ local trigger = mesecons_button and "mesecons_button:button_off" or "default:mes
 minetest.register_craft({
 	output = "technic:chainsaw",
 	recipe = {
-		{"technic:stainless_steel_ingot", trigger,                      "technic:battery"},
-		{"basic_materials:copper_wire",      "basic_materials:motor",              "technic:battery"},
-		{"",                              "",                           "technic:stainless_steel_ingot"},
+		{"technic:stainless_steel_ingot", trigger, "technic:battery"},
+		{"basic_materials:copper_wire", "basic_materials:motor", "technic:battery"},
+		{"", "", "technic:stainless_steel_ingot"},
 	},
 	replacements = { {"basic_materials:copper_wire", "basic_materials:empty_spool"}, },
 
 })
-
